@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "landbot-test2-back"
+version = "0.1.0"
+description = "Backend Challenge for Landbot"
+authors = ["Omar Manrique"]
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+Flask = "^2.3"
+dependency-injector = "^4.41"
+pydantic = "^2.0"
+flask_sqlalchemy = "^3.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,65 @@
+{
+  "info": {
+    "name": "Landbot Campaign API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "List Campaigns",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/campaigns/",
+          "host": ["{{base_url}}"],
+          "path": ["campaigns", ""]
+        }
+      }
+    },
+    {
+      "name": "Create Campaign",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Demo Campaign\",\n  \"steps\": [\n    {\"name\": \"Step 1\"},\n    {\"name\": \"Step 2\"}\n  ]\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/campaigns/",
+          "host": ["{{base_url}}"],
+          "path": ["campaigns", ""]
+        }
+      }
+    },
+    {
+      "name": "Get Campaign by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/campaigns/1",
+          "host": ["{{base_url}}"],
+          "path": ["campaigns", "1"]
+        }
+      }
+    },
+    {
+      "name": "Complete Step",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/campaigns/1/steps/1",
+          "host": ["{{base_url}}"],
+          "path": ["campaigns", "1", "steps", "1"]
+        }
+      }
+    }
+  ]
+}
