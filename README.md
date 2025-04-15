@@ -21,6 +21,23 @@ The core principles applied include:
 
 ---
 
+## 📦 Dependency Management
+
+This project uses [Poetry](https://python-poetry.org/) for dependency and packaging management.
+
+### ➕ To install Poetry locally:
+
+```bash
+curl -sSL https://install.python-poetry.org | python3 -
+```
+
+To install the dependencies:
+
+```bash
+poetry install
+```
+
+
 ## 📂 Folder Structure
 
 ```
