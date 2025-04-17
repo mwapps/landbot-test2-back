@@ -4,7 +4,7 @@ from dependency_injector.wiring import inject, Provide
 from flask import Blueprint, request, jsonify
 
 from app.container import Container
-from app.core.exceptions import BusinessException
+from app.core.exceptions.exceptions import BusinessException
 from app.core.use_cases.campaign_service import CampaignService
 
 bp = Blueprint('campaign', __name__, url_prefix='/campaigns')

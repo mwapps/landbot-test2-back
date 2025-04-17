@@ -1,7 +1,7 @@
 import logging
 
 from app.adapters.repositories.campaign_repository import CampaignRepository
-from app.core.exceptions import BusinessException
+from app.core.exceptions.exceptions import BusinessException
 
 
 class CampaignService:
